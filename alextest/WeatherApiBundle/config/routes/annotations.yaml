@@ -1,0 +1,5 @@
+controllers:                          # Произвольный идентификатор
+    type: attribute                  # Тип подкючаемого ресурса
+    resource: ../../src/Controller/   # Путь к файлам, размеченным аннотациями
+weather_api_bundle:
+    resource: '@WeatherApiBundle/config/routes.yaml'

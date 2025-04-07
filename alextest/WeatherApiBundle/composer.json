@@ -1,0 +1,33 @@
+{
+    "name": "alextest/weather-bundle",
+    "type": "symfony-bundle",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/http-client": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/twig-bundle": "6.4.*",
+        "symfony/yaml": "6.4.*",
+        "symfony/monolog-bundle": "*"
+    },
+    "require-dev": {
+        "ext-dom": "*",
+        "phpunit/phpunit": "^12.0"
+    },
+    "repositories": {
+        "type": "path",
+        "url": "./bundles/alextest/WeatherApiBundle"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexTest\\WeatherApiBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlexTest\\WeatherApiBundle\\Tests\\": "tests/"
+        }
+    }
+}
